@@ -66,7 +66,7 @@ export default async function handler(req, res) {
 			from: FROM,
 			to: [TO],
 			reply_to: email,
-			subject: `Portfolio contact — ${name}`,
+			subject: `abhisheshpradhan.com contact — ${name}`,
 			html: `<p><b>${esc(name)}</b> (${esc(email)}) sent a message via your portfolio:</p>
              <p>${esc(message).replace(/\n/g, "<br>")}</p>`,
 		}),
