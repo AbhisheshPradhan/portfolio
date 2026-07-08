@@ -10,7 +10,7 @@ const TO = "pradhan.abhishesh@gmail.com";
 // 'onboarding@resend.dev' works out of the box but only delivers to YOUR OWN
 // Resend account email. Once you verify your domain in Resend, switch to e.g.:
 // const FROM = 'Portfolio <contact@abhisheshpradhan.com>';
-const FROM = "Portfolio <onboarding@resend.dev>";
+const FROM = "AbhisheshPradhan.com <onboarding@resend.dev>";
 
 export default async function handler(req, res) {
 	if (req.method !== "POST") {
