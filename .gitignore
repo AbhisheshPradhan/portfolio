@@ -1,0 +1,13 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
+
+# Vercel
+.vercel/
+
+# Local env — secrets never get committed
+.env
+.env*.local

@@ -1,0 +1,2117 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Abhishesh Pradhan // Software Engineer</title>
+		<meta
+			name="description"
+			content="Abhishesh Pradhan — frontend-focused full-stack software engineer in Sydney. TypeScript, React, Node.js."
+		/>
+		<link
+			rel="canonical"
+			href="https://abhisheshpradhan.com/"
+		/>
+		<link
+			rel="icon"
+			href="media/favicons/favicon.ico"
+			sizes="any"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="media/favicons/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="media/favicons/favicon-16x16.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="media/favicons/apple-touch-icon.png"
+		/>
+		<link
+			rel="manifest"
+			href="media/favicons/site.webmanifest"
+		/>
+		<meta
+			name="theme-color"
+			content="#07080a"
+		/>
+		<!-- Open Graph / social share cards (absolute URLs required). -->
+		<meta
+			property="og:type"
+			content="website"
+		/>
+		<meta
+			property="og:url"
+			content="https://abhisheshpradhan.com/"
+		/>
+		<meta
+			property="og:title"
+			content="Abhishesh Pradhan // Software Engineer"
+		/>
+		<meta
+			property="og:description"
+			content="Frontend-focused full-stack software engineer in Sydney. TypeScript, React, Node.js."
+		/>
+		<meta
+			property="og:image"
+			content="https://abhisheshpradhan.com/media/og-image.jpg"
+		/>
+		<meta
+			property="og:image:width"
+			content="1200"
+		/>
+		<meta
+			property="og:image:height"
+			content="630"
+		/>
+		<meta
+			property="og:image:alt"
+			content="Abhishesh Pradhan — Software Engineer, Sydney"
+		/>
+		<meta
+			name="twitter:card"
+			content="summary_large_image"
+		/>
+		<meta
+			name="twitter:title"
+			content="Abhishesh Pradhan // Software Engineer"
+		/>
+		<meta
+			name="twitter:description"
+			content="Frontend-focused full-stack software engineer in Sydney. TypeScript, React, Node.js."
+		/>
+		<meta
+			name="twitter:image"
+			content="https://abhisheshpradhan.com/media/og-image.jpg"
+		/>
+		<!-- Person structured data: tells Google this page IS the entity
+		     "Abhishesh Pradhan" and links every profile to it (sameAs). -->
+		<script type="application/ld+json">
+			{
+				"@context": "https://schema.org",
+				"@type": "Person",
+				"name": "Abhishesh Pradhan",
+				"givenName": "Abhishesh",
+				"familyName": "Pradhan",
+				"jobTitle": "Software Engineer",
+				"description": "Frontend-focused full-stack software engineer in Sydney — TypeScript, React, Next.js, Node.js.",
+				"url": "https://abhisheshpradhan.com/",
+				"image": "https://abhisheshpradhan.com/media/photo.jpg",
+				"address": {
+					"@type": "PostalAddress",
+					"addressLocality": "Sydney",
+					"addressRegion": "NSW",
+					"addressCountry": "AU"
+				},
+				"alumniOf": {
+					"@type": "CollegeOrUniversity",
+					"name": "Macquarie University"
+				},
+				"knowsAbout": [
+					"TypeScript",
+					"React",
+					"Next.js",
+					"Node.js",
+					"Full-stack development",
+					"Frontend engineering",
+					"Web accessibility",
+					"Technical SEO"
+				],
+				"sameAs": [
+					"https://www.linkedin.com/in/abhishesh-pradhan",
+					"https://github.com/AbhisheshPradhan",
+					"https://au.seek.com/profiles/abhishesh-pradhan-17rmfrV2Z1",
+					"https://www.zoominfo.com/p/Abhishesh-Pradhan/7184691305",
+					"https://theorg.com/org/longtail-ux/org-chart/abhishesh-pradhan"
+				]
+			}
+		</script>
+		<link
+			rel="preconnect"
+			href="https://fonts.googleapis.com"
+		/>
+		<link
+			rel="preconnect"
+			href="https://fonts.gstatic.com"
+			crossorigin
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Share+Tech+Mono&display=swap"
+			rel="stylesheet"
+		/>
+		<style>
+			:root {
+				--bg: #07080a;
+				--panel: #0d0f13;
+				--line: #22262e;
+				--yellow: #fcee0a;
+				--cyan: #00f0ff;
+				--red: #ff003c;
+				--text: #c9ced6;
+				--dim: #7b828e;
+				--display: "Rajdhani", sans-serif;
+				--mono: "Share Tech Mono", monospace;
+				--cut: 14px;
+			}
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			html {
+				scroll-behavior: smooth;
+			}
+			body {
+				background: var(--bg);
+				color: var(--text);
+				font-family: var(--display);
+				font-size: 17px;
+				line-height: 1.6;
+				overflow-x: hidden;
+			}
+			/* scanline overlay */
+			body::before {
+				content: "";
+				position: fixed;
+				inset: 0;
+				pointer-events: none;
+				background: repeating-linear-gradient(
+					0deg,
+					rgba(255, 255, 255, 0.02) 0 1px,
+					transparent 1px 3px
+				);
+				z-index: 999;
+			}
+			::selection {
+				background: var(--yellow);
+				color: #000;
+			}
+			a {
+				color: var(--cyan);
+				text-decoration: none;
+			}
+			a:hover {
+				color: var(--yellow);
+			}
+			a:focus-visible,
+			button:focus-visible {
+				outline: 2px solid var(--yellow);
+				outline-offset: 3px;
+			}
+
+			.wrap {
+				max-width: 1060px;
+				margin: 0 auto;
+				padding: 24px 24px;
+			}
+
+			/* ---------- NAV ---------- */
+			nav {
+				position: sticky;
+				top: 0;
+				z-index: 100;
+				background: rgba(7, 8, 10, 0.92);
+				backdrop-filter: blur(6px);
+				border-bottom: 1px solid var(--line);
+			}
+			.nav-inner {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				height: 60px;
+			}
+			.logo {
+				font-family: var(--mono);
+				font-size: 15px;
+				color: var(--yellow);
+				letter-spacing: 1px;
+			}
+			.logo span {
+				color: var(--dim);
+			}
+			.nav-links {
+				display: flex;
+				gap: 26px;
+				list-style: none;
+			}
+			.nav-links a {
+				font-family: var(--mono);
+				font-size: 13px;
+				letter-spacing: 1.5px;
+				color: var(--dim);
+				text-transform: uppercase;
+			}
+			.nav-links a:hover {
+				color: var(--yellow);
+			}
+
+			/* ---------- HERO ---------- */
+			header {
+				padding: 110px 0 80px;
+				position: relative;
+			}
+			/* WebGL night-city skyline behind the hero (drawn by the script at the bottom) */
+			.hero-bg {
+				position: absolute;
+				top: 0;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 100vw;
+				height: 100%;
+				z-index: -1;
+				pointer-events: none;
+				-webkit-mask-image: linear-gradient(
+					180deg,
+					transparent 0,
+					#000 12%,
+					#000 72%,
+					transparent 100%
+				);
+				mask-image: linear-gradient(
+					180deg,
+					transparent 0,
+					#000 12%,
+					#000 72%,
+					transparent 100%
+				);
+			}
+			/* soft scrim so the bio paragraph stays readable over the city */
+			.sub {
+				position: relative;
+			}
+			.sub::before {
+				content: "";
+				position: absolute;
+				inset: -18px -30px;
+				z-index: -1;
+				pointer-events: none;
+				background: rgba(7, 8, 10, 0.65);
+				-webkit-mask-image: radial-gradient(
+					ellipse at 50% 50%,
+					#000 45%,
+					transparent 100%
+				);
+				mask-image: radial-gradient(
+					ellipse at 50% 50%,
+					#000 45%,
+					transparent 100%
+				);
+			}
+			.sys-line,
+			.tagline,
+			.sub,
+			.photo-tag {
+				text-shadow: 0 2px 12px rgba(0, 0, 0, 0.9);
+			}
+			.sys-line {
+				font-family: var(--mono);
+				font-size: 13px;
+				color: var(--cyan);
+				letter-spacing: 2px;
+				margin-bottom: 18px;
+			}
+			.sys-line::before {
+				content: "> ";
+				color: var(--yellow);
+			}
+			h1 {
+				font-size: clamp(44px, 8vw, 86px);
+				font-weight: 700;
+				line-height: 0.95;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				color: #fff;
+				position: relative;
+				display: inline-block;
+			}
+			/* glitch */
+			.glitch {
+				position: relative;
+			}
+			.glitch::before,
+			.glitch::after {
+				content: attr(data-text);
+				position: absolute;
+				inset: 0;
+				overflow: hidden;
+			}
+			.glitch::before {
+				color: var(--cyan);
+				animation: glitch1 3.5s infinite steps(1);
+				clip-path: inset(0 0 60% 0);
+			}
+			.glitch::after {
+				color: var(--red);
+				animation: glitch2 3.5s infinite steps(1);
+				clip-path: inset(55% 0 0 0);
+			}
+			@keyframes glitch1 {
+				0%,
+				93%,
+				100% {
+					transform: none;
+					opacity: 0;
+				}
+				94% {
+					transform: translate(-3px, -2px);
+					opacity: 0.8;
+				}
+				96% {
+					transform: translate(2px, 1px);
+					opacity: 0.8;
+				}
+				98% {
+					transform: none;
+					opacity: 0;
+				}
+			}
+			@keyframes glitch2 {
+				0%,
+				93%,
+				100% {
+					transform: none;
+					opacity: 0;
+				}
+				94% {
+					transform: translate(3px, 2px);
+					opacity: 0.8;
+				}
+				96% {
+					transform: translate(-2px, -1px);
+					opacity: 0.8;
+				}
+				98% {
+					transform: none;
+					opacity: 0;
+				}
+			}
+			.tagline {
+				margin-top: 22px;
+				font-size: 22px;
+				font-weight: 600;
+				color: var(--yellow);
+				text-transform: uppercase;
+				letter-spacing: 2px;
+			}
+			.sub {
+				margin-top: 10px;
+				max-width: 620px;
+				color: var(--dim);
+				font-size: 18px;
+			}
+			.hero-links {
+				margin-top: 34px;
+				display: flex;
+				gap: 14px;
+				flex-wrap: wrap;
+			}
+			.btn {
+				font-family: var(--mono);
+				font-size: 14px;
+				letter-spacing: 1.5px;
+				padding: 12px 26px;
+				border: 1px solid var(--yellow);
+				color: var(--yellow);
+				text-transform: uppercase;
+				clip-path: polygon(
+					0 0,
+					calc(100% - var(--cut)) 0,
+					100% var(--cut),
+					100% 100%,
+					var(--cut) 100%,
+					0 calc(100% - var(--cut))
+				);
+				transition:
+					background 0.15s,
+					color 0.15s;
+			}
+			.btn:hover {
+				background: var(--yellow);
+				color: #000;
+			}
+			.btn.alt {
+				border-color: var(--line);
+				color: var(--dim);
+			}
+			.btn.alt:hover {
+				border-color: var(--cyan);
+				color: var(--cyan);
+				background: transparent;
+			}
+
+			/* ---------- SECTIONS ---------- */
+			section {
+				padding: 70px 0;
+				border-top: 1px solid var(--line);
+			}
+			.sec-tag {
+				font-family: var(--mono);
+				font-size: 13px;
+				color: var(--red);
+				letter-spacing: 3px;
+				margin-bottom: 8px;
+			}
+			h2 {
+				font-size: 34px;
+				font-weight: 700;
+				text-transform: uppercase;
+				color: #fff;
+				letter-spacing: 1.5px;
+				margin-bottom: 36px;
+			}
+			h2 .slash {
+				color: var(--yellow);
+			}
+
+			/* ---------- STATS HUD ---------- */
+			.stats {
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				gap: 18px;
+			}
+			.stat {
+				background: var(--panel);
+				border: 1px solid var(--line);
+				padding: 24px;
+				clip-path: polygon(
+					0 0,
+					calc(100% - var(--cut)) 0,
+					100% var(--cut),
+					100% 100%,
+					var(--cut) 100%,
+					0 calc(100% - var(--cut))
+				);
+			}
+			.stat .num {
+				font-size: 46px;
+				font-weight: 700;
+				color: var(--yellow);
+				line-height: 1;
+			}
+			.stat .lbl {
+				font-family: var(--mono);
+				font-size: 12px;
+				color: var(--dim);
+				letter-spacing: 1.5px;
+				margin-top: 8px;
+				text-transform: uppercase;
+			}
+			.bar {
+				height: 4px;
+				background: var(--line);
+				margin-top: 16px;
+				position: relative;
+				overflow: hidden;
+			}
+			.bar i {
+				position: absolute;
+				inset: 0;
+				right: auto;
+				background: var(--cyan);
+				width: 0;
+				transition: width 1.2s ease 0.2s;
+			}
+			.stats-note {
+				font-family: var(--mono);
+				font-size: 12.5px;
+				color: var(--dim);
+				margin-top: 14px;
+				letter-spacing: 0.5px;
+			}
+
+			/* ---------- JOBS ---------- */
+			.job {
+				display: grid;
+				grid-template-columns: 190px 1fr;
+				gap: 28px;
+				padding: 28px 0;
+				border-bottom: 1px dashed var(--line);
+			}
+			.job:last-child {
+				border-bottom: none;
+			}
+			.job-when {
+				font-family: var(--mono);
+				font-size: 13px;
+				color: var(--dim);
+				letter-spacing: 1px;
+				padding-top: 5px;
+			}
+			.job h3 {
+				font-size: 22px;
+				font-weight: 700;
+				color: #fff;
+				text-transform: uppercase;
+				letter-spacing: 0.5px;
+			}
+			.job .role {
+				color: var(--cyan);
+				font-family: var(--mono);
+				font-size: 13.5px;
+				letter-spacing: 1px;
+				margin: 4px 0 12px;
+			}
+			.job ul {
+				list-style: none;
+			}
+			.job li {
+				padding-left: 20px;
+				position: relative;
+				margin-bottom: 8px;
+				color: var(--text);
+			}
+			.job li::before {
+				content: "▸";
+				position: absolute;
+				left: 0;
+				color: var(--yellow);
+			}
+
+			/* ---------- GIGS ---------- */
+			.gigs {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+				gap: 20px;
+			}
+			.gig {
+				position: relative;
+				background: var(--panel);
+				border: 1px solid var(--line);
+				padding: 26px;
+				display: flex;
+				flex-direction: column;
+				clip-path: polygon(
+					0 0,
+					calc(100% - var(--cut)) 0,
+					100% var(--cut),
+					100% 100%,
+					var(--cut) 100%,
+					0 calc(100% - var(--cut))
+				);
+				transition:
+					border-color 0.15s,
+					transform 0.15s;
+			}
+			.gig:hover {
+				border-color: var(--cyan);
+				transform: translateY(-3px);
+			}
+			/* stretched link — makes the whole card clickable while
+			   keeping a single visible link for accessibility */
+			.gig .card-link::after {
+				content: "";
+				position: absolute;
+				inset: 0;
+			}
+			/* inline highlight — cyberpunk yellow marker on key phrases */
+			.hl {
+				background: var(--yellow);
+				color: #000;
+				padding: 0 5px;
+				font-weight: 600;
+				box-decoration-break: clone;
+				-webkit-box-decoration-break: clone;
+			}
+			.gig .gig-id {
+				font-family: var(--mono);
+				font-size: 11.5px;
+				color: var(--red);
+				letter-spacing: 2px;
+				margin-bottom: 12px;
+			}
+			.gig h3 {
+				font-size: 21px;
+				color: #fff;
+				text-transform: uppercase;
+				letter-spacing: 0.5px;
+				margin-bottom: 10px;
+			}
+			.gig p {
+				color: var(--dim);
+				font-size: 16px;
+				flex: 1;
+			}
+			.gig .stack {
+				font-family: var(--mono);
+				font-size: 12px;
+				color: var(--cyan);
+				letter-spacing: 1px;
+				margin-top: 16px;
+			}
+			.gig .links {
+				margin-top: 14px;
+				display: flex;
+				gap: 16px;
+				font-family: var(--mono);
+				font-size: 13px;
+				letter-spacing: 1px;
+			}
+
+			/* ---------- LOADOUT ---------- */
+			.loadout {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 10px;
+			}
+			.chip {
+				font-family: var(--mono);
+				font-size: 13px;
+				letter-spacing: 1px;
+				border: 1px solid var(--line);
+				color: var(--text);
+				padding: 8px 16px;
+				clip-path: polygon(
+					0 0,
+					calc(100% - 8px) 0,
+					100% 8px,
+					100% 100%,
+					8px 100%,
+					0 calc(100% - 8px)
+				);
+			}
+			.chip.primary {
+				border-color: var(--yellow);
+				color: var(--yellow);
+			}
+
+			/* ---------- CONTACT ---------- */
+			.contact-panel {
+				background: var(--panel);
+				border: 1px solid var(--line);
+				padding: 40px;
+				clip-path: polygon(
+					0 0,
+					calc(100% - 22px) 0,
+					100% 22px,
+					100% 100%,
+					22px 100%,
+					0 calc(100% - 22px)
+				);
+			}
+			.contact-panel p {
+				color: var(--dim);
+				max-width: 560px;
+				margin-bottom: 24px;
+			}
+			.term {
+				font-family: var(--mono);
+				font-size: 14px;
+				color: var(--cyan);
+				margin-bottom: 6px;
+			}
+			.term::before {
+				content: "> ";
+				color: var(--yellow);
+			}
+
+			footer {
+				border-top: 1px solid var(--line);
+				padding: 28px 0;
+				font-family: var(--mono);
+				font-size: 12px;
+				color: var(--dim);
+				letter-spacing: 1px;
+				display: flex;
+				justify-content: space-between;
+				gap: 12px;
+				flex-wrap: wrap;
+			}
+			footer .status {
+				color: var(--yellow);
+			}
+
+			/* ---------- GITHUB LIVE ---------- */
+			.stats.duo {
+				grid-template-columns: repeat(2, 1fr);
+			}
+			.gh-cols {
+				display: grid;
+				grid-template-columns: 1fr;
+				gap: 20px;
+				margin-top: 20px;
+			}
+			.gh-panel {
+				/* min-width 0 lets the panel shrink to the viewport so the
+				   year graph scrolls inside .gh-scroll instead of stretching the page */
+				min-width: 0;
+				background: var(--panel);
+				border: 1px solid var(--line);
+				padding: 24px;
+				clip-path: polygon(
+					0 0,
+					calc(100% - var(--cut)) 0,
+					100% var(--cut),
+					100% 100%,
+					var(--cut) 100%,
+					0 calc(100% - var(--cut))
+				);
+			}
+			.gh-title {
+				font-family: var(--mono);
+				font-size: 12px;
+				color: var(--dim);
+				letter-spacing: 2px;
+				margin-bottom: 16px;
+			}
+			.gh-scroll {
+				overflow-x: auto;
+				padding-bottom: 4px;
+				/* themed scrollbar (shows only when the graph can't fit, e.g. mobile) */
+				scrollbar-width: thin;
+				scrollbar-color: var(--yellow) #101318;
+			}
+			.gh-scroll::-webkit-scrollbar {
+				height: 8px;
+			}
+			.gh-scroll::-webkit-scrollbar-track {
+				background: #101318;
+				border: 1px solid var(--line);
+			}
+			.gh-scroll::-webkit-scrollbar-thumb {
+				background: var(--yellow);
+			}
+			.gh-months {
+				display: flex;
+				gap: 3px;
+				margin-bottom: 6px;
+				font-family: var(--mono);
+				font-size: 10px;
+				color: var(--dim);
+				letter-spacing: 1px;
+			}
+			.gh-m {
+				flex: 1;
+				min-width: 8px;
+				white-space: nowrap;
+				overflow: visible;
+			}
+			.gh-heat {
+				display: flex;
+				gap: 3px;
+			}
+			.gh-week {
+				display: flex;
+				flex-direction: column;
+				gap: 3px;
+				flex: 1;
+				min-width: 8px;
+			}
+			.gh-day {
+				width: 100%;
+				aspect-ratio: 1;
+				background: rgba(255, 255, 255, 0.05);
+			}
+			.lang-row {
+				display: grid;
+				grid-template-columns: 110px 1fr 56px;
+				gap: 12px;
+				align-items: center;
+				margin-bottom: 10px;
+				font-family: var(--mono);
+				font-size: 12.5px;
+			}
+			.lang-row .nm {
+				color: var(--text);
+				letter-spacing: 1px;
+			}
+			.lang-row .pc {
+				color: var(--dim);
+				text-align: right;
+			}
+			.lang-row .bar {
+				margin-top: 0;
+			}
+
+			/* ---------- STATIC GRID TEXTURE ---------- */
+			body {
+				background-image:
+					linear-gradient(
+						rgba(255, 255, 255, 0.02) 1px,
+						transparent 1px
+					),
+					linear-gradient(
+						90deg,
+						rgba(255, 255, 255, 0.02) 1px,
+						transparent 1px
+					);
+				background-size: 40px 40px;
+				background-attachment: fixed;
+			}
+
+			/* ---------- CONTACT FORM ---------- */
+			#contact-form {
+				margin: 26px 0 30px;
+				display: flex;
+				flex-direction: column;
+				gap: 18px;
+				max-width: 640px;
+			}
+			.form-row {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 18px;
+			}
+			#contact-form label {
+				display: flex;
+				flex-direction: column;
+				gap: 7px;
+			}
+			.f-lbl {
+				font-family: var(--mono);
+				font-size: 11.5px;
+				color: var(--dim);
+				letter-spacing: 2px;
+			}
+			#contact-form input,
+			#contact-form textarea {
+				background: #0a0c10;
+				border: 1px solid var(--line);
+				color: var(--text);
+				font-family: var(--display);
+				font-size: 16px;
+				padding: 12px 14px;
+				resize: vertical;
+				clip-path: polygon(
+					0 0,
+					calc(100% - 10px) 0,
+					100% 10px,
+					100% 100%,
+					10px 100%,
+					0 calc(100% - 10px)
+				);
+			}
+			#contact-form input:focus,
+			#contact-form textarea:focus {
+				outline: none;
+				border-color: var(--yellow);
+			}
+			#contact-form .btn {
+				align-self: flex-start;
+				background: transparent;
+				cursor: pointer;
+			}
+			.form-status {
+				font-family: var(--mono);
+				font-size: 13px;
+				color: var(--dim);
+				min-height: 1em;
+			}
+			.form-status.ok {
+				color: var(--cyan);
+			}
+			.form-status.err {
+				color: var(--red);
+			}
+
+			/* ---------- HERO PHOTO ---------- */
+			.hero-grid {
+				display: grid;
+				grid-template-columns: 1fr 300px;
+				gap: 56px;
+				align-items: center;
+			}
+			.photo-col {
+				justify-self: end;
+			}
+			.photo-frame {
+				position: relative;
+				width: 280px;
+				margin: 0;
+				border: 1px solid var(--line);
+				clip-path: polygon(
+					0 0,
+					calc(100% - 22px) 0,
+					100% 22px,
+					100% 100%,
+					22px 100%,
+					0 calc(100% - 22px)
+				);
+			}
+			.photo-frame img {
+				display: block;
+				width: 100%;
+				filter: grayscale(1) contrast(1.05) brightness(1.08);
+			}
+			.photo-frame::after {
+				content: "";
+				position: absolute;
+				inset: 0;
+				background: linear-gradient(
+					160deg,
+					rgba(0, 240, 255, 0.35),
+					rgba(252, 238, 10, 0.08) 55%,
+					rgba(255, 0, 60, 0.28)
+				);
+				mix-blend-mode: overlay;
+			}
+			.photo-frame::before {
+				content: "";
+				position: absolute;
+				inset: 0;
+				z-index: 1;
+				background: repeating-linear-gradient(
+					0deg,
+					rgba(0, 0, 0, 0.12) 0 1px,
+					transparent 1px 3px
+				);
+			}
+			.photo-tag {
+				font-family: var(--mono);
+				font-size: 11.5px;
+				color: var(--dim);
+				letter-spacing: 2px;
+				margin-top: 10px;
+				text-align: right;
+			}
+			.photo-tag b {
+				color: var(--cyan);
+				font-weight: 400;
+			}
+
+			/* ---------- TERMINAL / ABOUT ---------- */
+			.terminal {
+				background: var(--panel);
+				border: 1px solid var(--line);
+				font-family: var(--mono);
+				font-size: 14.5px;
+				line-height: 1.9;
+				padding: 30px;
+				clip-path: polygon(
+					0 0,
+					calc(100% - 22px) 0,
+					100% 22px,
+					100% 100%,
+					22px 100%,
+					0 calc(100% - 22px)
+				);
+			}
+			.terminal .cmd {
+				color: var(--yellow);
+			}
+			.terminal .out {
+				color: var(--text);
+				margin-bottom: 18px;
+				max-width: 760px;
+			}
+			.terminal .out:last-child {
+				margin-bottom: 0;
+			}
+
+			/* stats embedded in job entry */
+			.job .stats {
+				margin-top: 22px;
+			}
+			.job .stat {
+				padding: 18px;
+			}
+			.job .stat .num {
+				font-size: 32px;
+			}
+
+			/* key-client strip per job */
+			.clients {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 8px;
+				align-items: center;
+				margin-top: 18px;
+			}
+			.clients-lbl {
+				font-family: var(--mono);
+				font-size: 11px;
+				color: var(--dim);
+				letter-spacing: 2px;
+				margin-right: 6px;
+			}
+			.client {
+				font-family: var(--mono);
+				font-size: 12px;
+				letter-spacing: 1.5px;
+				color: var(--cyan);
+				border: 1px solid var(--line);
+				padding: 6px 12px;
+				clip-path: polygon(
+					0 0,
+					calc(100% - 8px) 0,
+					100% 8px,
+					100% 100%,
+					8px 100%,
+					0 calc(100% - 8px)
+				);
+			}
+			/* swap a .client chip for <img class="client-logo" src="logos/x.svg" alt="X">
+     once you have official logo files — this filter recolours them to fit the theme */
+			.client-logo {
+				height: 24px;
+				width: auto;
+				filter: grayscale(1) brightness(1.8) opacity(0.75);
+			}
+			.client-logo:hover {
+				filter: grayscale(0) brightness(1) opacity(1);
+			}
+
+			/* ---------- MOBILE ---------- */
+			@media (max-width: 720px) {
+				.stats {
+					grid-template-columns: 1fr;
+				}
+				.job {
+					grid-template-columns: 1fr;
+					gap: 6px;
+				}
+				.nav-links {
+					gap: 16px;
+				}
+				.nav-links li:nth-child(4),
+				.nav-links li:nth-child(5),
+				.nav-links li:nth-child(6) {
+					display: none;
+				}
+				header {
+					padding: 70px 0 60px;
+				}
+				.hero-grid {
+					grid-template-columns: 1fr;
+					gap: 36px;
+				}
+				.photo-col {
+					justify-self: center;
+					text-align: center;
+				}
+				.photo-frame {
+					width: 220px;
+				}
+				.gh-cols {
+					grid-template-columns: 1fr;
+				}
+				.stats.duo {
+					grid-template-columns: 1fr;
+				}
+				.form-row {
+					grid-template-columns: 1fr;
+				}
+				.contact-panel {
+					padding: 26px 20px;
+				}
+				section {
+					padding: 52px 0;
+				}
+			}
+			/* honeypot — off-screen, invisible to humans, tempting to bots */
+			.hp-field {
+				position: absolute;
+				left: -9999px;
+				width: 1px;
+				height: 1px;
+				overflow: hidden;
+			}
+			/* ---------- REDUCED MOTION ---------- */
+			@media (prefers-reduced-motion: reduce) {
+				html {
+					scroll-behavior: auto;
+				}
+				.glitch::before,
+				.glitch::after {
+					animation: none;
+					opacity: 0;
+				}
+				.bar i {
+					transition: none;
+				}
+				.gig,
+				.gig:hover {
+					transform: none;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<div class="wrap nav-inner">
+				<div class="logo">AP<span>://</span>SYD</div>
+				<ul class="nav-links">
+					<li><a href="#about">About</a></li>
+					<li><a href="#jobs">Jobs</a></li>
+					<li><a href="#gigs">Gigs</a></li>
+					<li><a href="#loadout">Loadout</a></li>
+					<li><a href="#education">Education</a></li>
+					<li><a href="#github">GitHub</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<header class="wrap">
+			<canvas
+				class="hero-bg"
+				id="hero-bg"
+				aria-hidden="true"
+			></canvas>
+			<div class="hero-grid">
+				<div class="hero-copy">
+					<p class="sys-line">IDENTITY CONFIRMED // SYDNEY, AU</p>
+					<h1
+						class="glitch"
+						data-text="ABHISHESH PRADHAN"
+					>
+						ABHISHESH PRADHAN
+					</h1>
+					<p class="tagline">Software Engineer</p>
+					<p class="sub">
+						Frontend-focused full-stack engineer. I build fast,
+						accessible web applications in TypeScript, React and
+						Node.js — and I ship things that measurably move
+						numbers.
+					</p>
+					<div class="hero-links">
+						<a
+							class="btn"
+							href="#jobs"
+							>View work</
+						>
+						<a
+							class="btn alt"
+							href="resume.pdf"
+							target="_blank"
+							rel="noopener"
+							>Resume</a
+						>
+						<a
+							class="btn alt"
+							href="https://github.com/AbhisheshPradhan"
+							target="_blank"
+							rel="noopener"
+							>GitHub</a
+						>
+						<a
+							class="btn alt"
+							href="https://linkedin.com/in/abhishesh-pradhan"
+							target="_blank"
+							rel="noopener"
+							>LinkedIn</a
+						>
+						<a
+							class="btn alt"
+							href="https://au.seek.com/profiles/abhishesh-pradhan-17rmfrV2Z1"
+							target="_blank"
+							rel="noopener"
+							>SEEK</a
+						>
+					</div>
+				</div>
+				<div class="photo-col">
+					<!-- Drop your headshot next to this file as media/photo.jpg — the CSS applies the cyberpunk duotone treatment automatically -->
+					<figure class="photo-frame">
+						<img
+							src="media/photo.jpg"
+							alt="Abhishesh Pradhan"
+							onerror="
+								this.closest('.photo-col').style.display =
+									'none'
+							"
+						/>
+					</figure>
+					<p class="photo-tag">// OPERATIVE: <b>A.PRADHAN</b></p>
+				</div>
+			</div>
+		</header>
+
+		<section id="about">
+			<div class="wrap">
+				<p class="sec-tag">// SYSTEM LOG</p>
+				<h2>About <span class="slash">/</span> Me</h2>
+				<div class="terminal">
+					<p><span class="cmd">&gt; whoami</span></p>
+					<p class="out">
+						Software engineer with 5+ years across SaaS, e-commerce
+						and enterprise. Frontend-focused, full-stack capable. I
+						care about the metrics users never see — load time,
+						accessibility, conversion — because they decide whether
+						software actually works.
+					</p>
+					<p>
+						<span class="cmd"
+							>&gt; recent_activity --since 2024</span
+						>
+					</p>
+					<p class="out">
+						Took a deliberate break from employment to build and
+						ship my own products: an iOS app published to the App
+						Store, and web projects that rank #1 in AI search
+						results. Turns out I can't stop engineering.
+					</p>
+					<p><span class="cmd">&gt; status</span></p>
+					<p class="out">
+						Sydney, AU. Open to frontend and full-stack roles.
+						Response time: fast.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="jobs">
+			<div class="wrap">
+				<p class="sec-tag">// EMPLOYMENT LOG</p>
+				<h2>Main <span class="slash">/</span> Jobs</h2>
+
+				<div class="job">
+					<div class="job-when">NOV 2021 — AUG 2024</div>
+					<div>
+						<h3>Longtail UX</h3>
+						<p class="role">
+						SOFTWARE DEVELOPER / CONSULTANT ·
+						<a
+							href="https://www.linkedin.com/company/longtail-ux/"
+							target="_blank"
+							rel="noopener"
+							>LINKEDIN</a
+						>
+					</p>
+						<ul>
+							<li>
+								Engineered LUX Smart Pages — high-performance,
+								SEO-optimised landing pages (Laravel/Blade)
+								extending client websites, delivering the
+								conversion, CAC and ROAS results below while
+								meeting Core Web Vitals and WCAG accessibility
+								standards.
+							</li>
+							<li>
+								Built the Admin Portal — a full-stack Page
+								Builder (React, TypeScript, PHP, MySQL)
+								automating lifecycle management of global
+								campaign pages; authored API specifications and
+								mock APIs so frontend and backend teams could
+								build in parallel.
+							</li>
+							<li>
+								Managed CI/CD pipelines across Staging, UAT and
+								Production using Jenkins and Bitbucket for
+								reliable releases.
+							</li>
+						</ul>
+						<div class="stats">
+							<div class="stat">
+								<div class="num">+98%</div>
+								<div class="lbl">Buyer conversion</div>
+								<div class="bar"><i data-w="98%"></i></div>
+							</div>
+							<div class="stat">
+								<div class="num">−64%</div>
+								<div class="lbl">Acquisition cost</div>
+								<div class="bar"><i data-w="64%"></i></div>
+							</div>
+							<div class="stat">
+								<div class="num">169%</div>
+								<div class="lbl">Return on ad spend</div>
+								<div class="bar"><i data-w="100%"></i></div>
+							</div>
+						</div>
+						<p class="stats-note">
+							Client campaign results — Adore Beauty, LUX Smart
+							Pages.
+						</p>
+						<div class="clients">
+							<span class="clients-lbl">KEY CLIENTS //</span>
+							<span class="client">WOOLWORTHS</span>
+							<span class="client">MYER</span>
+							<span class="client">DAN MURPHY'S</span>
+							<span class="client">STAN</span>
+							<span class="client">MITRE 10</span>
+							<span class="client">ADORE BEAUTY</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="job">
+					<div class="job-when">AUG 2018 — NOV 2021</div>
+					<div>
+						<h3>Norbrik</h3>
+						<p class="role">
+							TECHNICAL CONSULTANT ·
+							<a
+								href="https://norbrik.com"
+								target="_blank"
+								rel="noopener"
+								>NORBRIK.COM</a
+							>
+						</p>
+						<ul>
+							<li>
+								Architected
+								<a
+									href="https://bpautomate.com"
+									target="_blank"
+									rel="noopener"
+									>BPAutomate</a
+								>
+								— founding engineer and lead frontend developer
+								for a Business Process Automation SaaS platform:
+								drag-and-drop form builder, multi-stage RBAC
+								forms, custom workflow engines and email
+								notifications.
+								<a
+									href="https://www.charterhall.com.au/"
+									target="_blank"
+									rel="noopener"
+									>Charter Hall</a
+								>
+								signed as the first enterprise client (React,
+								Redux, TypeScript, .NET Core, MS SQL Server).
+							</li>
+							<li>
+								Engineered Microsoft SharePoint solutions for
+								<a
+									href="https://au.goodman.com/"
+									target="_blank"
+									rel="noopener"
+									>Goodman</a
+								>
+								— enterprise web parts (SPFx, PnPjs) and
+								a .NET Core application automating MS Teams and
+								SharePoint provisioning, cutting IT setup time
+								by 95% (C#, PnP Framework).
+							</li>
+							<li>
+								Built the
+								<a
+									href="https://wentwest.com.au"
+									target="_blank"
+									rel="noopener"
+									>WentWest</a
+								>
+								website with a two-way sync between a legacy
+								ChilliDB (SOAP) system and WordPress, plus an
+								Eventbrite events integration; at related
+								company Devwals, built an e-commerce SaaS
+								platform with Stripe subscriptions (Angular 6,
+								.NET Core).
+							</li>
+						</ul>
+						<div class="clients">
+							<span class="clients-lbl">KEY CLIENTS //</span>
+							<span class="client">GOODMAN</span>
+							<span class="client">CHARTER HALL</span>
+							<span class="client">WENTWEST</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="gigs">
+			<div class="wrap">
+				<p class="sec-tag">// SIDE OPERATIONS · 2024 — PRESENT</p>
+				<h2>Gigs <span class="slash">/</span> Projects</h2>
+				<div class="gigs">
+					<article class="gig">
+						<div class="gig-id">GIG_001 · LIVE SAAS</div>
+						<h3>YouTube Transcript Downloader</h3>
+						<p>
+							Live SaaS platform for bulk-downloading transcripts
+							of entire playlists or channels — with a developer
+							API, an MCP server and a credit-based PAYG model.
+							Ranked
+							<span class="hl">#1 by ChatGPT and Perplexity</span>
+							for this use case within two weeks of launch.
+						</p>
+						<div class="stack">
+							NEXT.JS · MONGODB · STRIPE · OPENAI
+						</div>
+						<div class="links">
+							<a
+								class="card-link"
+								href="https://youtubetranscriptdownload.com"
+								target="_blank"
+								rel="noopener"
+								>LIVE ↗</a
+							>
+						</div>
+					</article>
+
+					<article class="gig">
+						<div class="gig-id">GIG_002 · LAUNCHING SOON</div>
+						<h3>Nepali Eats</h3>
+						<p>
+							Full-stack restaurant discovery platform covering
+							<span class="hl"
+								>430+ restaurants with dish-level menu
+								search</span
+							>, interactive maps and free QR menus for venues —
+							built end to end, from data enrichment pipeline to
+							production.
+						</p>
+						<div class="stack">
+							NEXT.JS 16 · POSTGRESQL/POSTGIS · MAPBOX
+						</div>
+						<div class="links">
+							<a
+								href="https://nepali-eats.vercel.app/"
+								target="_blank"
+								rel="noopener"
+								>PREVIEW ↗</a
+							>
+						</div>
+					</article>
+
+					<article class="gig">
+						<div class="gig-id">GIG_003 · APP STORE</div>
+						<h3>Aspectly</h3>
+						<p>
+							Published native iOS camera app with dual capture,
+							multiple shooting modes and aspect ratios — taken
+							through the full App Store release process solo.
+						</p>
+						<div class="stack">SWIFT · iOS</div>
+						<div class="links">
+							<a
+								href="https://apps.apple.com/au/app/dual-capture-video-aspectly/id6775155682"
+								target="_blank"
+								rel="noopener"
+								>APP STORE ↗</a
+							>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section id="loadout">
+			<div class="wrap">
+				<p class="sec-tag">// TECH STACK</p>
+				<h2>Loadout <span class="slash">/</span> Skills</h2>
+				<div class="loadout">
+					<span class="chip primary">TypeScript</span>
+					<span class="chip primary">React</span>
+					<span class="chip primary">Next.js</span>
+					<span class="chip primary">Node.js</span>
+					<span class="chip">C# / .NET Core</span>
+					<span class="chip">PHP / Laravel</span>
+					<span class="chip">Swift / iOS</span>
+					<span class="chip">Python</span>
+					<span class="chip">PostgreSQL / PostGIS</span>
+					<span class="chip">MongoDB / MySQL</span>
+					<span class="chip">Docker</span>
+					<span class="chip">AWS / Vercel</span>
+					<span class="chip">CI/CD</span>
+					<span class="chip">MCP Servers</span>
+					<span class="chip">AI-assisted dev (Claude Code)</span>
+					<span class="chip">WCAG Accessibility</span>
+					<span class="chip">Technical SEO</span>
+				</div>
+			</div>
+		</section>
+
+		<section id="education">
+			<div class="wrap">
+				<p class="sec-tag">// TRAINING DATA</p>
+				<h2>Education <span class="slash">/</span> Base Install</h2>
+
+				<div class="job">
+					<div class="job-when">GRADUATED 2019</div>
+					<div>
+						<h3>Bachelor of Engineering (Honours)</h3>
+						<p class="role">
+							MAJOR: SOFTWARE · MACQUARIE UNIVERSITY
+						</p>
+						<ul>
+							<li>
+								Honours-grade firmware: four years of software
+								engineering fundamentals — data structures,
+								algorithms, systems design — installed at the
+								hardware level. Everything since has been an
+								upgrade, not a rewrite.
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="github">
+			<div class="wrap">
+				<p class="sec-tag">// NETRUNNER LOG</p>
+				<h2>GitHub <span class="slash">/</span> Live</h2>
+				<div class="stats duo">
+					<div class="stat">
+						<div
+							class="num"
+							id="gh-total"
+						>
+							--
+						</div>
+						<div class="lbl">Contributions · last 12 months</div>
+					</div>
+					<div class="stat">
+						<p class="gh-title">TOP LANGUAGES // MOST USED</p>
+						<div id="gh-langs"></div>
+					</div>
+				</div>
+				<div class="gh-cols">
+					<div class="gh-panel">
+						<p class="gh-title">ACTIVITY // LAST 12 MONTHS</p>
+						<div class="gh-scroll">
+							<div
+								id="gh-months"
+								class="gh-months"
+							></div>
+							<div
+								id="gh-heat"
+								class="gh-heat"
+							></div>
+						</div>
+					</div>
+				</div>
+				<p
+					class="stats-note"
+					id="gh-note"
+				>
+					Pulled live from the GitHub API on page load — nothing
+					hand-typed.
+				</p>
+			</div>
+		</section>
+
+		<section id="contact">
+			<div class="wrap">
+				<div class="contact-panel">
+					<p class="sec-tag">// ESTABLISH LINK</p>
+					<h2>Contact</h2>
+					<p>
+						Open to software engineering roles in Sydney and remote.
+						If you've got interesting problems, I've got a keyboard.
+					</p>
+					<form id="contact-form">
+						<div class="form-row">
+							<label>
+								<span class="f-lbl">NAME</span>
+								<input
+									name="name"
+									type="text"
+									required
+									maxlength="200"
+									autocomplete="name"
+								/>
+							</label>
+							<label>
+								<span class="f-lbl">EMAIL</span>
+								<input
+									name="email"
+									type="email"
+									required
+									maxlength="200"
+									autocomplete="email"
+								/>
+							</label>
+						</div>
+						<label>
+							<span class="f-lbl">MESSAGE</span>
+							<textarea
+								name="message"
+								rows="5"
+								required
+								maxlength="5000"
+							></textarea>
+						</label>
+						<!-- spam trap: real users never see or fill this -->
+						<div
+							class="hp-field"
+							aria-hidden="true"
+						>
+							<label
+								>Company
+								<input
+									type="text"
+									name="company"
+									tabindex="-1"
+									autocomplete="off"
+							/></label>
+						</div>
+						<input
+							type="hidden"
+							name="ts"
+							id="form-ts"
+						/>
+						<button
+							class="btn"
+							type="submit"
+						>
+							Transmit
+						</button>
+						<p
+							id="form-status"
+							class="form-status"
+							role="status"
+						></p>
+					</form>
+					<p class="term">pradhan.abhishesh@gmail.com</p>
+					<div class="hero-links">
+						<a
+							class="btn alt"
+							href="https://linkedin.com/in/abhishesh-pradhan"
+							target="_blank"
+							rel="noopener"
+							>LinkedIn</a
+						>
+						<a
+							class="btn alt"
+							href="https://au.seek.com/profiles/abhishesh-pradhan-17rmfrV2Z1"
+							target="_blank"
+							rel="noopener"
+							>SEEK profile</a
+						>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div
+				class="wrap"
+				style="
+					display: flex;
+					justify-content: space-between;
+					flex-wrap: wrap;
+					gap: 12px;
+					width: 100%;
+				"
+			>
+				<span>© 2026 ABHISHESH PRADHAN · SYDNEY, AU</span>
+				<span class="status">STATUS: OPEN TO WORK ▮</span>
+			</div>
+		</footer>
+
+		<script>
+			// hero background — procedural "Vivid Sydney as Night City", hand-rolled WebGL, zero deps.
+			// Parallax towers, flickering windows, crisscrossing vivid beams.
+			// Pauses when the hero scrolls off-screen; renders a single static frame
+			// under prefers-reduced-motion; removes itself if WebGL is unavailable.
+			(function () {
+				const canvas = document.getElementById("hero-bg");
+				const gl = canvas.getContext("webgl", {
+					alpha: false,
+					powerPreference: "low-power",
+				});
+				if (!gl) return canvas.remove();
+
+				const VERT =
+					"attribute vec2 a;void main(){gl_Position=vec4(a,0.,1.);}";
+				const FRAG = `
+precision highp float;
+uniform vec2 u_res;
+uniform float u_t; /* seconds */
+
+float hash(float n) { return fract(sin(n * 127.1) * 43758.5453); }
+float hash2(vec2 p) { return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453); }
+
+void main() {
+	vec2 uv = (gl_FragCoord.xy * 2.0 - u_res) / u_res.y;
+	vec3 bg = vec3(0.027, 0.031, 0.039);      /* --bg #07080a */
+	vec3 cyan = vec3(0.0, 0.94, 1.0);
+	vec3 yellow = vec3(0.988, 0.933, 0.039);
+	float horizon = -0.45;
+
+	/* smog glow above the city */
+	vec3 col = bg;
+	float g = uv.y - horizon;
+	col += yellow * exp(-abs(g) * 5.0) * 0.26;
+	col += cyan * exp(-abs(g) * 1.8) * 0.06;
+
+	/* stars, fading in away from the glow */
+	vec2 sc = floor(uv * vec2(90.0, 55.0));
+	if (hash2(sc) > 0.996) {
+		float tw = 0.5 + 0.5 * sin(u_t * (1.0 + hash2(sc + 9.0) * 3.0) + hash2(sc) * 40.0);
+		col += vec3(0.6, 0.8, 1.0) * 0.10 * tw * smoothstep(0.05, 0.35, uv.y);
+	}
+
+	/* vivid sydney — crisscrossing searchlight beams from behind the skyline */
+	for (int j = 0; j < 4; j++) {
+		float fj = float(j);
+		vec2 bo = vec2(-1.7 + fj * 1.1, horizon + 0.05);
+		float ang = 1.5708 + sin(u_t * (0.22 + fj * 0.07) + fj * 2.1) * 0.6;
+		vec2 dir = vec2(cos(ang), sin(ang));
+		vec2 rel = uv - bo;
+		float along = dot(rel, dir);
+		if (along > 0.0) {
+			float side = abs(dot(rel, vec2(-dir.y, dir.x)));
+			col += vec3(0.45, 0.80, 1.0) *
+				smoothstep(0.015 + along * 0.10, 0.0, side) *
+				exp(-along * 0.9) * 0.11;
+		}
+	}
+
+	/* three parallax layers of towers, far to near */
+	for (int i = 0; i < 3; i++) {
+		float fi = float(i);
+		float cw = 0.09 + fi * 0.075;         /* tower width per layer */
+		float x = uv.x + hash(fi * 7.0) * 41.7 + u_t * (0.006 + fi * 0.008);
+		float id = floor(x / cw);
+		float fx = fract(x / cw);
+		float h = hash(id + fi * 91.7);
+		if (i == 2 && h < 0.30) continue;     /* gaps in the near row */
+		float top = horizon + 0.04 + h * h * (0.20 + fi * 0.17);
+		if (uv.y < top && fx > 0.03 && fx < 0.97) {
+			/* dark silhouette; far layers hazier */
+			col = bg * (0.85 - fi * 0.25) + vec3(0.008, 0.010, 0.016) * (2.0 - fi);
+			if (i > 0) {
+				/* lit windows — mostly cyan, some yellow, a few flickering */
+				vec2 wc = vec2(floor(fx * 7.0), floor((uv.y - horizon) / 0.022));
+				vec2 wf = vec2(fract(fx * 7.0), fract((uv.y - horizon) / 0.022));
+				float wr = hash2(wc + id * 13.7 + fi * 31.3);
+				if (wf.x > 0.3 && wf.x < 0.75 && wf.y > 0.25 && wf.y < 0.65 &&
+					wr > 0.86 && uv.y < top - 0.03) {
+					float fl = wr > 0.97
+						? step(0.5, hash2(wc + id + floor(u_t * 4.0)))
+						: 1.0;
+					vec3 wcol = mix(cyan, yellow, step(0.9, hash2(wc + id * 3.1)));
+					col += wcol * (0.12 + 0.35 * hash2(wc * 1.7 + id)) * fl;
+				}
+			}
+			/* blinking red beacons on the tallest near towers */
+			if (i == 2 && h > 0.82) {
+				vec2 dl = vec2((fx - 0.5) * cw, uv.y - top);
+				float blink = smoothstep(0.6, 1.0, sin(u_t * 1.5 + id * 2.0));
+				col += vec3(1.0, 0.0, 0.235) * exp(-dot(dl, dl) * 6000.0) * blink;
+			}
+		}
+	}
+
+	gl_FragColor = vec4(col, 1.0);
+}`;
+
+				const sh = (type, src) => {
+					const s = gl.createShader(type);
+					gl.shaderSource(s, src);
+					gl.compileShader(s);
+					return s;
+				};
+				const prog = gl.createProgram();
+				gl.attachShader(prog, sh(gl.VERTEX_SHADER, VERT));
+				gl.attachShader(prog, sh(gl.FRAGMENT_SHADER, FRAG));
+				gl.linkProgram(prog);
+				if (!gl.getProgramParameter(prog, gl.LINK_STATUS))
+					return canvas.remove();
+				gl.useProgram(prog);
+
+				gl.bindBuffer(gl.ARRAY_BUFFER, gl.createBuffer());
+				gl.bufferData(
+					gl.ARRAY_BUFFER,
+					new Float32Array([-1, -1, 3, -1, -1, 3]),
+					gl.STATIC_DRAW,
+				);
+				const loc = gl.getAttribLocation(prog, "a");
+				gl.enableVertexAttribArray(loc);
+				gl.vertexAttribPointer(loc, 2, gl.FLOAT, false, 0, 0);
+				const uRes = gl.getUniformLocation(prog, "u_res");
+				const uT = gl.getUniformLocation(prog, "u_t");
+
+				const reduced = matchMedia("(prefers-reduced-motion: reduce)");
+				let onScreen = true,
+					raf = 0;
+
+				function frame(now) {
+					raf = 0;
+					const dpr = Math.min(devicePixelRatio || 1, 2);
+					const w = (canvas.clientWidth * dpr) | 0,
+						h = (canvas.clientHeight * dpr) | 0;
+					if (canvas.width !== w || canvas.height !== h) {
+						canvas.width = w;
+						canvas.height = h;
+						gl.viewport(0, 0, w, h);
+					}
+					gl.uniform2f(uRes, w, h);
+					// city drifts, windows flicker; frozen under reduced motion
+					gl.uniform1f(uT, reduced.matches ? 0 : (now / 1000) % 7200);
+					gl.drawArrays(gl.TRIANGLES, 0, 3);
+					if (onScreen && !reduced.matches)
+						raf = requestAnimationFrame(frame);
+				}
+				const kick = () => raf || (raf = requestAnimationFrame(frame));
+
+				new IntersectionObserver((e) => {
+					onScreen = e[0].isIntersecting;
+					if (onScreen) kick();
+				}).observe(canvas);
+				addEventListener("resize", kick);
+				reduced.addEventListener("change", kick);
+				kick();
+			})();
+
+			// section headings "decrypt" on first scroll-in (skipped under reduced motion)
+			(function () {
+				if (matchMedia("(prefers-reduced-motion: reduce)").matches)
+					return;
+				const GLYPHS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789#$%&<>/";
+				const rand = () => GLYPHS[(Math.random() * GLYPHS.length) | 0];
+
+				function decrypt(h) {
+					// per text node, so the yellow slash <span> keeps its styling
+					const nodes = [];
+					const walk = document.createTreeWalker(
+						h,
+						NodeFilter.SHOW_TEXT,
+					);
+					let n;
+					while ((n = walk.nextNode()))
+						if (n.textContent.trim())
+							nodes.push([n, n.textContent]);
+					const total = nodes.reduce((s, [, t]) => s + t.length, 0);
+					const t0 = performance.now();
+					const DUR = 500;
+					(function tick(now) {
+						const solved = ((now - t0) / DUR) * total;
+						let seen = 0;
+						nodes.forEach(([node, text]) => {
+							node.textContent = text
+								.split("")
+								.map((c, i) =>
+									seen + i < solved || c === " " ? c : rand(),
+								)
+								.join("");
+							seen += text.length;
+						});
+						if (solved < total) requestAnimationFrame(tick);
+						else
+							nodes.forEach(
+								([node, text]) => (node.textContent = text),
+							);
+					})(t0);
+				}
+
+				const hio = new IntersectionObserver(
+					(entries) => {
+						entries.forEach((e) => {
+							if (e.isIntersecting) {
+								hio.unobserve(e.target);
+								decrypt(e.target);
+							}
+						});
+					},
+					{ threshold: 0.6 },
+				);
+				document
+					.querySelectorAll("section h2")
+					.forEach((h) => hio.observe(h));
+			})();
+
+			// for the ones who open the console — hello.
+			console.log(
+				"%cAP://SYD%c\n\n> UNAUTHORIZED ACCESS DETECTED...\n> ...just kidding. Nice instincts, though.\n> While you're here: no framework, no build step, no dependencies —\n> the hero skyline is a hand-rolled WebGL shader. Have a look around.\n> Hiring? pradhan.abhishesh@gmail.com",
+				"font-family:monospace;font-size:22px;font-weight:bold;color:#fcee0a;background:#07080a;padding:4px 8px;",
+				"font-family:monospace;font-size:12px;color:#00f0ff;",
+			);
+
+			// animate HUD stat bars when they scroll into view
+			const bars = document.querySelectorAll(".bar i");
+			const io = new IntersectionObserver(
+				(entries) => {
+					entries.forEach((e) => {
+						if (e.isIntersecting) {
+							e.target.style.width = e.target.dataset.w;
+							io.unobserve(e.target);
+						}
+					});
+				},
+				{ threshold: 0.4 },
+			);
+			bars.forEach((b) => io.observe(b));
+
+			// contact form → posts to the serverless function at /api/contact
+			// (requires deployment, e.g. Vercel — it will NOT send when opened as a local file)
+			const form = document.getElementById("contact-form");
+			// stamp render time so we can reject near-instant (bot) submits
+			document.getElementById("form-ts").value = Date.now();
+			form.addEventListener("submit", async (ev) => {
+				ev.preventDefault();
+				const status = document.getElementById("form-status");
+				const elapsed =
+					Date.now() -
+					Number(document.getElementById("form-ts").value || 0);
+				if (elapsed < 2000) {
+					status.textContent =
+						"> SLOW DOWN — take a second and try again.";
+					status.className = "form-status err";
+					return;
+				}
+				status.textContent = "> TRANSMITTING...";
+				status.className = "form-status";
+				try {
+					const r = await fetch("/api/contact", {
+						method: "POST",
+						headers: { "Content-Type": "application/json" },
+						body: JSON.stringify(
+							Object.fromEntries(new FormData(form)),
+						),
+					});
+					if (!r.ok) throw 0;
+					status.textContent =
+						"> MESSAGE DELIVERED. I'll get back to you soon.";
+					status.className = "form-status ok";
+					form.reset();
+				} catch {
+					status.textContent =
+						"> TRANSMISSION FAILED. Email me directly instead.";
+					status.className = "form-status err";
+				}
+			});
+
+			// ---------- GitHub stats: live contribution graph with snapshot fallback ----------
+			const GH_USER = "AbhisheshPradhan";
+
+			// Fallback snapshot, shown only if the live APIs are unreachable.
+			// To refresh: load the page while live data works, run  copy(window.__ghSnapshot)
+			// in the browser console, and paste the result here.
+			const GH_SNAPSHOT = {
+				taken: "2026-07-08",
+				total: 281,
+				// daily contribution counts, oldest → newest (public activity)
+				heat: [
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+					0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0,
+					0, 0, 0, 4, 2, 4, 0, 1, 1, 0, 1, 0, 3, 4, 0, 3, 0, 0, 1, 3,
+					1, 1, 2, 0, 0, 0, 0, 0, 0, 1, 2, 3, 8, 1, 6, 0, 7, 0, 0, 6,
+					2, 0, 3, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+					0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+					0, 0, 0, 0, 3, 0, 1, 24, 44, 16, 5, 1, 2, 4, 14, 4, 4, 0, 0,
+					7, 16, 13, 13, 10, 10, 5, 7, 0,
+				],
+			};
+
+			// Language split is static (mirrors the GitHub profile widget) — the exact
+			// percentages need per-repo byte counts the public API can't give in one call.
+			const GH_LANGS = [
+				["TypeScript", 64.48],
+				["JavaScript", 22.96],
+				["Swift", 9.02],
+				["CSS", 2.0],
+				["Python", 1.54],
+			];
+
+			(function () {
+				const $ = (id) => document.getElementById(id);
+				const level = (n) =>
+					n === 0 ? 0 : n < 3 ? 1 : n < 6 ? 2 : n < 10 ? 3 : 4;
+				const ALPHA = [0, 0.3, 0.55, 0.8, 1];
+
+				$("gh-langs").innerHTML = GH_LANGS.map(
+					([nm, pct]) =>
+						`<div class="lang-row"><span class="nm">${nm}</span><span class="bar"><i style="width:${pct}%"></i></span><span class="pc">${pct}%</span></div>`,
+				).join("");
+
+				function render(d) {
+					$("gh-total").textContent = d.total;
+
+					const heatEl = $("gh-heat"),
+						monthsEl = $("gh-months");
+					heatEl.innerHTML = "";
+					monthsEl.innerHTML = "";
+					const DAY = 86400000,
+						end = new Date(d.taken).getTime();
+					const days = d.heat; // oldest → newest
+					const weeks = Math.ceil(days.length / 7);
+					let lastMonth = -1;
+					for (let w = 0; w < weeks; w++) {
+						const first = w * 7;
+						const firstDate = new Date(
+							end - (days.length - 1 - first) * DAY,
+						);
+
+						// month label above the first week of each month;
+						// skip the trailing weeks so the last label can't
+						// overhang the row and force a phantom scrollbar
+						const lab = document.createElement("div");
+						lab.className = "gh-m";
+						if (firstDate.getMonth() !== lastMonth) {
+							if (w < weeks - 3)
+								lab.textContent = firstDate
+									.toLocaleString("en", { month: "short" })
+									.toUpperCase();
+							lastMonth = firstDate.getMonth();
+						}
+						monthsEl.appendChild(lab);
+
+						const col = document.createElement("div");
+						col.className = "gh-week";
+						for (
+							let i = first;
+							i < Math.min(first + 7, days.length);
+							i++
+						) {
+							const n = days[i] || 0;
+							const key = new Date(
+								end - (days.length - 1 - i) * DAY,
+							)
+								.toISOString()
+								.slice(0, 10);
+							const cell = document.createElement("div");
+							cell.className = "gh-day";
+							const a = ALPHA[level(n)];
+							if (a)
+								cell.style.background = `rgba(252,238,10,${a})`;
+							cell.title = `${key}: ${n} contribution${n === 1 ? "" : "s"}`;
+							col.appendChild(cell);
+						}
+						heatEl.appendChild(col);
+					}
+				}
+
+				async function live() {
+					const r = await fetch(
+						`https://github-contributions-api.jogruber.de/v4/${GH_USER}?y=last`,
+					);
+					if (!r.ok) throw 0;
+					const contrib = await r.json();
+
+					// full-year daily contribution counts (matches your GitHub profile graph)
+					const cs = contrib.contributions; // [{date, count, level}] oldest → newest
+					const heat = cs.map((c) => c.count);
+					const data = {
+						taken: cs[cs.length - 1].date,
+						total:
+							contrib.total?.lastYear ??
+							heat.reduce((s, n) => s + n, 0),
+						heat,
+					};
+					window.__ghSnapshot = data; // for easy snapshot refreshes from the console
+					return data;
+				}
+
+				live()
+					.then((d) => {
+						render(d);
+						$("gh-note").textContent =
+							"Pulled live from the GitHub contribution graph on page load.";
+					})
+					.catch(() => {
+						render(GH_SNAPSHOT);
+						$("gh-note").innerHTML =
+							`LIVE LINK OFFLINE — showing snapshot from ${GH_SNAPSHOT.taken}. Verify at <a href="https://github.com/${GH_USER}"
+target="_blank"
+rel="noopener"
+>github.com/${GH_USER}</a>`;
+					});
+			})();
+		</script>
+	</body>
+</html>
