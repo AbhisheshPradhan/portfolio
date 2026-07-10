@@ -472,6 +472,18 @@
 			h2 .slash {
 				color: var(--yellow);
 			}
+			/* heading + action button on one row (e.g. GitHub section) */
+			.sec-head {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				gap: 18px;
+				flex-wrap: wrap;
+				margin-bottom: 36px;
+			}
+			.sec-head h2 {
+				margin-bottom: 0;
+			}
 
 			/* ---------- STATS HUD ---------- */
 			.stats {
@@ -899,6 +911,12 @@
 				align-self: flex-start;
 				background: transparent;
 				cursor: pointer;
+			}
+			/* ID-specificity hover — without this, #contact-form .btn keeps
+			   the transparent background on hover while the text turns black */
+			#contact-form .btn:hover {
+				background: var(--yellow);
+				color: #000;
 			}
 			.form-status {
 				font-family: var(--mono);
@@ -1440,7 +1458,7 @@
 					</article>
 
 					<article class="gig">
-						<div class="gig-id">GIG_002 · LAUNCHING SOON</div>
+						<div class="gig-id">GIG_002 · LIVE</div>
 						<h3>Nepali Eats</h3>
 						<p>
 							Full-stack restaurant discovery platform covering
@@ -1456,10 +1474,11 @@
 						</div>
 						<div class="links">
 							<a
-								href="https://nepali-eats.vercel.app/"
+								class="card-link"
+								href="https://nepalieats.com.au/"
 								target="_blank"
 								rel="noopener"
-								>PREVIEW ↗</a
+								>LIVE ↗</a
 							>
 						</div>
 					</article>
@@ -1475,6 +1494,7 @@
 						<div class="stack">SWIFT · iOS</div>
 						<div class="links">
 							<a
+								class="card-link"
 								href="https://apps.apple.com/au/app/dual-capture-video-aspectly/id6775155682"
 								target="_blank"
 								rel="noopener"
@@ -1541,7 +1561,16 @@
 		<section id="github">
 			<div class="wrap">
 				<p class="sec-tag">// NETRUNNER LOG</p>
-				<h2>GitHub <span class="slash">/</span> Live</h2>
+				<div class="sec-head">
+					<h2>GitHub <span class="slash">/</span> Live</h2>
+					<a
+						class="btn alt"
+						href="https://github.com/AbhisheshPradhan"
+						target="_blank"
+						rel="noopener"
+						>View profile ↗</a
+					>
+				</div>
 				<div class="stats duo">
 					<div class="stat">
 						<div
